@@ -26,7 +26,7 @@ jobs:
 
       - name: Set up Git user information
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/krishgb.in.git
           npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
